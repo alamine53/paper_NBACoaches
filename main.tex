@@ -1,0 +1,53 @@
+\documentclass{article}
+%\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[autostyle, english = american]{csquotes}
+\setlength{\parindent}{4em}
+\setlength{\parskip}{1em}
+\renewcommand{\baselinestretch}{2.0}
+\renewcommand{\arraystretch}{0.5}
+\MakeOuterQuote{"}
+\usepackage{dcolumn}
+\usepackage{babel}
+\usepackage{blindtext}
+\usepackage[toc,page]{appendix}
+\usepackage{siunitx}
+\usepackage{tablefootnote}
+\usepackage{textgreek}
+\usepackage[referable]{threeparttablex}
+\usepackage{booktabs}
+\usepackage{lipsum}
+\usepackage{xcolor}
+\usepackage{subfiles}
+\usepackage{tabularx}
+%\usepackage[backend=biber, style=alphabetic, sorting=ynt]{biblatex}
+%% Sets page size and margins
+\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\title{Do Coaches Affect Performance? Evidence from the NBA}
+\author{Ramzy Al-Amine}
+\date{January 2019}
+\begin{document}
+\newcolumntype{d}[1]{D..{#1}}
+
+%\color{blue}
+\begin{titlepage}
+\maketitle
+\vspace{3cm}
+\subfile{sections/0.abstract.tex}
+\vspace{3cm}
+\end{titlepage}
+\subfile{sections/1.introduction.tex}
+\subfile{sections/2.data.tex}
+\subfile{sections/3.method.tex}
+\subfile{sections/4.results.tex}
+\subfile{sections/5.robustness.tex}
+\subfile{sections/6.conclusion.tex}
+\nocite{*}
+\clearpage
+\bibliographystyle{plain}
+\bibliography{refs}
+\clearpage
+\subfile{sections/7.appendix.tex}
+\end{document}
+
+
