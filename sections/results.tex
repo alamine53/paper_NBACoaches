@@ -1,0 +1,31 @@
+
+
+\section{Results}
+
+\subsection{Joint Impact of Coaches}
+
+In aggregate, coach fixed effects explain a significant portion of the variation in team wins. Table 3 displays the results from two models, a baseline Model (I) that doesn't include fixed effects and Model (II) that includes them. A comparison between (I) and (II) highlights the importance of including them. For example, the adjusted R-squared increases by 12.8 percentage points, pointing to greater explanatory power in Model (II). Additionally, the coefficients on Players 1 through 5 experience a decrease in magnitude in (II). This decrease is highest in absolute terms for players 1 and 5, which indicates that much of these players' performance is associated with the roles assigned to them by their coach. In other words, great coaches tend to make a better use of their best and worst player in the main rotation. Moreover, the F-test on the joint significance of coaches is highly significant, underlining the importance of including them. 
+
+%\subfile{tables/table3.tex}
+
+By looking at Model (II), we can infer that roster quality and injuries are important determinants of success, with statistically significant coefficients across the board. On average, a full point increase in Player 1's BPM is associated with 1.73 additional wins for team \textit{i}, compared to 0.84 for player 5. This suggests that, on average, player 1 is almost twice as important for success as player 5. In terms of injuries, a game missed by player 1 is associated with twice as many losses as player 5. For example, a player like Stephen Curry who achieves a BPM of 12 is associated with around 18 team wins and every game he misses is associates lowers wins by 0.17. These results confirm general intuition that star players matter to a great degree.
+
+\subsection{Individual Coach Fixed Effects}
+
+In terms of individual fixed effects, some coaches seem to make a bigger difference than others. Table 4 presents the estimations corresponding to each of the 164 head coaches represented in the sample, each one assigned a single coefficient. \footnote{Coefficients for \textit{non-movers} are greyed-out because they are subject to lower accuracy.} The coefficients are significant in magnitude and are subject to high variability. This means that not only do coaches improve performance by a statistically significant margin, but the choice of head coach matters to a large extennt. 
+
+The size of coefficients is relative to a reference category, which means that the magnitude and significance levels are subject to vary depending on the choice of reference category. In this case, the reference category is chosen as the mean head coach. 
+
+The high degree of heterogeneity in the resulting estimates indicates that the implications for making the \textit{right} hire are substantial. Given the magnitude of the coefficients, many head coaches are able to propel teams into playoff territory or make them championship contenders. Although my estimates are based solely on 3-seasons worth' of regular season performance, 7 of the top 10 coaches happen to be NBA champions. This suggests that organizations who hire the right managers are more likely to reach the ultimate prize. 
+
+\subsubsection{Exceptional Coaches}
+
+By descending order of impact, the top coaches in the resulting ability estimates include Gregg Popovich (13.0), Brad Stevens (12.3), Tom Thibodeau (12.3), Pat Riley (10.5), Larry Bird (10.4), Steve Kerr (10.3), Rick Carlisle (9.6), Dave Joerger (9.5), and Billy Cunningham (9.1). As such, switching from Monty Williams who is at the mean of coaches,  to Gregg Popovich generates an additional 13.0 wins when roster characteristics are held at their means. To put this into perspective, this would have been enough to push Williams’ Pelicans to a playoff position in 2017.
+
+\subsubsection{Overrated Coaches}
+
+To get a feel for these estimates, it is helpful to compare between the left-hand side and the right-hand side of Table 4, where estimated fixed effects are compared against standard win percentages. Coaches who figure at the top of the ladder on the right-hand side but not the left can be considered as \textit{overrated} in the sense that their success has had a lot to do with the quality of the roster they've inherited. A prime example is Mike Brown who figures at 11 on the right but 67 on the left. In other words, at the time of his tenure, the roster's talent level [see LeBron James] helped propel his team to higher winning percentages. Other similar instances include David Blatt,....
+
+\subsubsection{Underrated Coaches}
+
+Similarly, this comparative exercise can help identify coaches who have had a great impact despite their team's mediocre end-of-season record. A primary case-in-point is Brad Stevens whose average wins over the course of his first three seasons ranks him 69th but whose estimated fixed effect ranks him second overall. In such cases, it can be said that teams tend to exceed expectations under this head coach. In Stevens' case, his team has achieved an average 38 wins with a roster equivalent to around 12.3 wins less than that. 
